@@ -14,8 +14,8 @@ export function GameContextProvider({ children }) {
   const [missCoords, setMissCoords] = useState([])
   const [gameStartTime, setGameStartTime] = useState(null);
   const [gameEndTime, setGameEndTime] = useState(null);
-  const [gameDuration, setGameDuration] = useState(0);
   const [isTimerRunning, setIsTimerRunning] = useState(true);
+  const [elapsedTime, setElapsedTime] = useState(0);
 
   const startGame = () => {
     setGameStartTime(new Date());
@@ -31,7 +31,7 @@ export function GameContextProvider({ children }) {
 
 
   return (
-    <GameContext.Provider value={{ Characters, setCharacters, clickPosition, setClickPosition, hitCoords, setHitCoords, missCoords, setMissCoords, gameStartTime, setGameStartTime, gameEndTime, setGameEndTime, gameDuration, setGameDuration, isTimerRunning, startGame, endGame }}>
+    <GameContext.Provider value={{ Characters, setCharacters, clickPosition, setClickPosition, hitCoords, setHitCoords, missCoords, setMissCoords, gameStartTime, setGameStartTime, gameEndTime, setGameEndTime, isTimerRunning, startGame, endGame, elapsedTime, setElapsedTime }}>
       {children}
     </GameContext.Provider>
   )

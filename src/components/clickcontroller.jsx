@@ -21,12 +21,12 @@ export function ClickController() {
     console.log('current position:', clickPosition);
 
     const clickBox = document.querySelector('.clickBox');
-    clickBox.style.left = clickPosition.x - 10 + 'px';
-    clickBox.style.top = clickPosition.y - 25 + 'px';
+    clickBox.style.left = clickPosition.x - 20 + 'px';
+    clickBox.style.top = clickPosition.y - 23 + 'px';
 
     const characterBox = document.querySelector('.characterBox');
-    characterBox.style.left = clickPosition.x + 15 + 'px';
-    characterBox.style.top = clickPosition.y - 25 + 'px';
+    characterBox.style.left = clickPosition.x + 25 + 'px';
+    characterBox.style.top = clickPosition.y - 23 + 'px';
   };
 
   const checkAnswer = (e) => {
