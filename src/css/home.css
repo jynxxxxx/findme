@@ -1,0 +1,41 @@
+.boardlink, .startbtn{
+  height: fit-content;
+  width: fit-content;
+  padding: 8px 16px;
+  border: #424c51 solid 2px;
+  border-radius: 12px;
+  background-color: #ceb59a;;
+}
+
+.startbtn{
+  font-family: var(--defaultfont);
+  font-size: 2rem;
+  font-weight: 600;
+  color: #424c51;
+}
+
+.homectn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.previewctn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #424c51 solid 2px;
+  border-radius: 12px;
+  background-color:  #cccec1;
+}
+
+.previewimg{
+  height: 30vh
+}
+
+.previewlabel{
+  font-size: 2rem;
+  font-weight: 600;
+}

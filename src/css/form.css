@@ -1,0 +1,42 @@
+.timelog, .name, .submitbtn{
+  font-size: 2rem;
+}
+
+.timelog{
+  margin-bottom: 3rem;
+}
+
+.formctn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: white;
+  border: #424c51 solid 2px;
+  border-radius: 12px;
+  font-size: 2rem;
+  height: 15rem;
+  width: 30rem;
+}
+
+.namectn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name, .submitbtn{
+  font-family: var(--defaultfont);
+  border-radius: 12px;
+}
+
+.name{
+  height: 2.5rem;
+  padding: 0 8px;
+  text-align: center;
+}
+

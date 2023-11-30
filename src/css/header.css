@@ -1,0 +1,43 @@
+.legend{
+  display: flex;
+  gap: 3rem;
+  width: fit-content;
+}
+
+#gameheader{
+  top: 2rem;
+  transform: none;
+}
+
+.keys{
+  width: 10rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  border: #424c51 solid 2px;
+  border-radius: 12px;
+  background-color: #ceb59a;;
+}
+
+.keyname{
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.characterimgheader{
+  width: 40%;
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+}
+
+.timer{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1.7rem;
+}
+
+.found{
+  background:rgb(187, 187, 187);
+  color: rgb(141, 140, 140);
+}

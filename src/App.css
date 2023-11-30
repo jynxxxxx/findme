@@ -1,79 +1,16 @@
-.header{
-  height: 10rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 4px solid black;
-  background-color: white;
-  z-index: 5;
+:root{
+  --titlefont: 'Fredericka the Great', serif;
+  --defaultfont: 'Podkova', serif;
+  background-color:	#dee0d4
 }
 
-.title{
-  position: fixed;
-  top: 3rem;
-  left: 5rem;
+a:-webkit-any-link {
+  text-decoration: none;
+  color: #424c51;
 }
 
-.legend{
-  display: flex;
-  gap: 3rem;
-  position: fixed;
-  top: 2rem;
-  right: 5rem;
-  width: fit-content;
-}
-
-.keys{
-  width: 10rem;
-  display: flex;
-  border: 1px lightgray solid;
-  display: flex;
-  align-items: center;
-}
-
-.keyname{
-  width: 100%;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.characterimg{
-  height: 100%;
-  width: 30%;
-}
-
-.mainctn{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10rem;
-}
-
-.parentDiv{
-  height: min-content;
-  width: min-content;
-  position: relative
-}
-
-.clickBox{
-  border: 2px solid red;
-  position: absolute;
-  width: 20px;
-  height: 50px;
-}
-
-.characterBox{
-  gap: 0.75rem; 
-  transition: all 300ms ease-in-out; 
-  background-color: white;
-  position: absolute;
-  z-index: 2;
-}
-
-.dropdownselect:hover{
-  background-color: rgba(28, 34, 44, 0.1)
+a:-webkit-any-link:hover{
+  transform: scale(1.1);
 }
 
 ul, li{
@@ -82,21 +19,53 @@ ul, li{
   padding: 0;
 }
 
-.hit{
-  width: 35px;
-  height: 40px;
-  border-radius: 60%;
-  border: 4px solid rgb(0, 255, 21);
+.header{
+  height: 10rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 4px solid black;
+  background-color: #e4cdb5;
+  z-index: 5;
 }
 
-.miss{
-  width: 20px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.rightheader{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  right: 5rem;
+  font-family: var(--defaultfont);
   font-size: 2rem;
-  font-weight: bolder;
-  color: red;
+  font-weight: 600;
+  color: #424c51;
 }
 
+.title{
+  position: absolute;
+  top: 50%;
+  left: 5rem; 
+  transform: translateY(-50%); 
+  font-family: var(--titlefont);
+  font-size: 6rem;
+  letter-spacing: 1rem;
+}
+
+.find{
+  color: #424c51;
+}
+
+.me{
+  color:	#749da1;
+}
+
+.mainctn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  font-family: var(--defaultfont);
+  color: #424c51;
+  padding: 3rem;
+  min-height: 70vh;
+}
