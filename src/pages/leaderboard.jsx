@@ -3,7 +3,7 @@ import { DateTime } from 'luxon';
 import { Link } from "react-router-dom";
 import '../css/leaderboard.css'
 
-export function Leaderboard() {
+export function Leaderboard () {
   const [scoreboard, setScoreboard] = useState([]);
   const endpoint = "https://us-west-2.aws.data.mongodb-api.com/app/data-mkzqm/endpoint/scoreboard"
 
@@ -36,10 +36,10 @@ export function Leaderboard() {
     <>
       <div className='header'>
         <div className='title'>
-          <Link to="/" className='find'>Find<span className='me'>Me</span></Link>
+          <Link to="/findme" className='find'>Find<span className='me'>Me</span></Link>
         </div>
         <div className="rightheader">
-          <Link to="/game" className="newgame">Play Again</Link>
+          <Link to="/findme/game" className="newgame">Play Again</Link>
         </div>
       </div>
       <div className="mainctn">

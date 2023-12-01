@@ -40,7 +40,7 @@ export function Form() {
       if (response.ok) {
         console.log('Score submitted successfully!');
         resetGame()
-        navigate("/leaderboard")
+        navigate("/findme/leaderboard")
       } else {
         console.error('Error submitting score:', response.statusText);
       }

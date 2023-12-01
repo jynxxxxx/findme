@@ -10,7 +10,7 @@ export function Header() {
     <>
       <div className='header'>
         <div className='title'>
-          <Link to="/" className='find'>Find<span className='me'>Me</span></Link>
+          <Link to="/findme" className='find'>Find<span className='me'>Me</span></Link>
         </div>
         <div className="rightheader" id='gameheader'>
           <ul className="legend" >

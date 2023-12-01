@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { Gameplay } from "./pages/gameplay";
 import { Home } from "./pages/home";
 import { Form } from "./pages/form";
-import { Leaderboard } from "./pages/leaderboard";
+import { Leaderboard }  from "./pages/leaderboard";
 import './App.css'
 import { GameContextProvider } from './context/gameContext.jsx'
 

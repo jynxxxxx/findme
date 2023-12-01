@@ -32,7 +32,7 @@ export function Gameplay() {
     const foundCharacters = Characters.filter(character => character.found);
     if (foundCharacters.length === 3) {
       endGame();
-      navigate("/form")
+      navigate("/findme/form")
     }
   }, [Characters]);
 
@@ -49,7 +49,7 @@ export function Gameplay() {
      
       <div className="mainctn">
         <div className='parentDiv' ref={imageRef} onClick={getCoords}>
-          <img src='/images/radiocity.png' className="background" alt="Wheres Waldo style image" />
+          <img src='images/radiocity.png' className="background" alt="Wheres Waldo style image" />
           {clickPosition && (
             <>
               <div className="clickBox" ></div>

@@ -14,8 +14,8 @@ const pinkMummy = new Character({
     x: 12,
     y: 855
   },
-  url: '/images/pinkmummy.png',
-  bwurl:'/images/pinkmummybw.png',
+  url: 'images/pinkmummy.png',
+  bwurl:'images/pinkmummybw.png',
 });
 
 const rocker = new Character({
@@ -24,8 +24,8 @@ const rocker = new Character({
     x: 506,
     y: 1443
   },
-  url: '/images/rocker.png',
-  bwurl: '/images/rockerbw.png',
+  url: 'images/rocker.png',
+  bwurl: 'images/rockerbw.png',
 });
 
 const reindeer = new Character({
@@ -34,8 +34,8 @@ const reindeer = new Character({
     x: 754,
     y: 940
   },
-  url: '/images/reindeer.png',
-  bwurl: '/images/reindeerbw.png',
+  url: 'images/reindeer.png',
+  bwurl: 'images/reindeerbw.png',
 });
 
 const initialCharacters = [pinkMummy, rocker, reindeer];
