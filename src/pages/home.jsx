@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import '../css/home.css'
 
 export function Home() {
-  
+
   return (
     <>
       <div className='header'>
@@ -16,7 +16,7 @@ export function Home() {
       <div className="mainctn">
         <div className="homectn">
           <div className="previewctn">
-            <img src='findme/images/radiocity.png' className="previewimg" alt="gameboard preview" />
+            <img src='images/radiocity.png' className="previewimg" alt="gameboard preview" />
             <div className="previewlabel">RadioCity</div>
           </div>
           <Link to="game" className="startbtn">Start Game</Link>
