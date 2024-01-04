@@ -1,7 +1,7 @@
-:root{
+:root {
   --titlefont: 'Fredericka the Great', serif;
   --defaultfont: 'Podkova', serif;
-  background-color:	#dee0d4
+  background-color: #dee0d4
 }
 
 a:-webkit-any-link {
@@ -9,18 +9,19 @@ a:-webkit-any-link {
   color: #424c51;
 }
 
-a:-webkit-any-link:hover{
+a:-webkit-any-link:hover {
   transform: scale(1.1);
 }
 
-ul, li{
-  list-style:none;
+ul,
+li {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.header{
-  height: 10rem;
+.header {
+  height: 7rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,10 +31,9 @@ ul, li{
   z-index: 5;
 }
 
-.rightheader{
+.rightheader {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%); 
+  bottom: 0;
   right: 5rem;
   font-family: var(--defaultfont);
   font-size: 2rem;
@@ -41,29 +41,35 @@ ul, li{
   color: #424c51;
 }
 
-.title{
+.rightheader .boardlink {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3rem;
+}
+
+.title {
   position: absolute;
   top: 50%;
-  left: 5rem; 
-  transform: translateY(-50%); 
+  left: 5rem;
+  transform: translateY(-50%);
   font-family: var(--titlefont);
-  font-size: 6rem;
+  font-size: 4rem;
   letter-spacing: 1rem;
 }
 
-.find{
+.find {
   color: #424c51;
 }
 
-.me{
-  color:	#749da1;
+.me {
+  color: #749da1;
 }
 
-.mainctn{
+.mainctn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 8rem;
   font-family: var(--defaultfont);
   color: #424c51;
   padding: 3rem;
